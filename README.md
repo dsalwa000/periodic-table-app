@@ -1,6 +1,8 @@
 # PeriodicTableApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.4.
+However library @ngrx/signals had to be downloaded via: npm i @ngrx/signals --legacy-peer-deps
+because there is no version 20. for it.
 
 ## Development server
 
