@@ -1,0 +1,27 @@
+<h2 mat-dialog-title>Edit Element</h2>
+<mat-dialog-content>
+  <form [formGroup]="form" (ngSubmit)="save()">
+    <mat-form-field style="display: none">
+      <input formControlName="position" matInput />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input formControlName="name" matInput />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Weight</mat-label>
+      <input formControlName="weight" matInput />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Symbol</mat-label>
+      <input formControlName="symbol" matInput />
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button matButton mat-dialog-close>Close</button>
+  <button matButton cdkFocusInitial (click)="save()">Save</button>
+</mat-dialog-actions>
